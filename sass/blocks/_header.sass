@@ -1,0 +1,149 @@
+.header
+	background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 33%), linear-gradient(0deg, rgba(66, 63, 63, 0.56), rgba(66, 63, 63, 0.56)), url(../img/navbar/bg.jpg) center no-repeat
+	padding-bottom: 20px
+
+.navbar
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding-top: 20px
+		padding-bottom: 47px
+	&__logo
+		background: url(../img/navbar/logo.png) center no-repeat
+		max-width: 333px
+		width: 100%
+
+	&__title
+		display: block
+		margin: auto
+		text-align: center
+		padding: 5px 0
+		font-family: 'Museo Sans Light'
+		font-weight: 700
+		font-size: 18px
+		line-height: 21px
+		text-transform: uppercase
+
+	&__info
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__contacts
+		display: flex
+		flex-direction: column
+		margin-right: 44px
+	&__mail
+		display: flex
+		align-items: center
+		margin-bottom: 5px
+		&_img
+			margin-right: 13px
+		&_text
+			text-decoration: none
+			color: $text-color
+			font-size: 18px
+	&__phone
+		display: flex
+		align-items: center
+		&_img
+			margin-right: 13px
+		&_text
+			margin-right: 7px
+			text-decoration: none
+			color: $text-color
+			font-weight: 700
+			font-size: 18px
+		&_whatsApp
+			margin-right: 7px
+
+@media (max-width: 805px)
+	.navbar
+		&__contacts
+			display: none
+		&__button
+			background: none
+			border: 3px solid $main-color
+@media (max-width: 510px)
+	.navbar
+		&__contacts
+			display: flex
+		&__logo
+			display: none
+		&__button
+
+.hero
+	border: 1px solid #FFFFFF
+	box-sizing: border-box
+	border-radius: 5px
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+		color: #FFFFFF
+		padding-top: 95px
+	&-text
+		&__title
+			font-weight: 700
+			font-size: 36px
+			line-height: 47px
+			letter-spacing: 0.08em
+			text-transform: uppercase
+			flex-basis: 80%
+			padding: 0 10px
+			margin: 0
+	&-list
+		background: rgba(66, 63, 63, 0.65)
+		border: 1px solid $main-color
+		box-sizing: border-box
+		border-radius: 0px 60px 60px 0px
+		margin: 0
+		margin-right: 10px
+		padding: 75px 0 75px 30px
+		&__item
+			list-style-type: none
+			display: flex
+			align-items: center
+			margin-bottom: 30px
+		&__image
+			margin-right: 15px
+		&__text
+			font-weight: 700
+			font-size: 24px
+	&-button
+		display: block
+		margin: auto
+		max-width: 250px
+		width: 100%
+		margin-top: 110px
+		margin-bottom: 30px
+		background: none
+		border-radius: 0
+		border: 3px solid $main-color
+		padding: 0
+		padding: 12px
+		font-weight: 700
+		font-size: 18px
+		line-height: 21px
+		color: #ffffff
+
+@media (max-width: 800px)
+	.hero
+		&-text
+			&__title
+				font-size: 24px
+				line-height: 32px
+		&-list
+			&__text
+				font-size: 18px
+@media (max-width: 770px)
+	.hero
+		&-block
+			flex-direction: column
+			padding-top: 15px
+		&-text
+			&__title
+				margin-bottom: 20px
+				text-align: center
+		&-list
+			margin: 0
