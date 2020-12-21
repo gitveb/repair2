@@ -9,6 +9,10 @@
 </head>
 <body>
 
+	<div class="arrow" id="arrow">
+		<img src="img/arrow.svg" alt="" class="arrow-img">
+	</div>
+
 	<header class="header">
 		<nav class="navbar">
 			<div class="container">
@@ -22,21 +26,21 @@
 						<div class="navbar__contacts">
 	
 							<div class="navbar__mail">
-								<img src="img/navbar/mail.png" alt="" class="navbar__mail_img">	
-								<a href="mailto:remont@yandex.ru" class="navbar__mail_text">remont@yandex.ru</a>
+								<img src="img/navbar/mail.svg" alt="" class="navbar__mail_img">	
+								<a href="mailto:foodremstroy@yandex.ru" class="navbar__mail_text">foodremstroy@yandex.ru</a>
 							</div>
 							<!-- /.navbar__mail -->
 							<div class="navbar__phone">
-								<img src="img/navbar/phone.png" alt="" class="navbar__phone_img">
-								<a href="tel:8(999)999-99-99" class="navbar__phone_text">8 (999) 999-99-99</a>
-								<img src="img/navbar/whatsapp.png" alt="WhatsApp" class="navbar__phone_whatsApp">
-								<img src="img/navbar/viber.png" alt="Viber" class="navbar__phone_viber">
+								<img src="img/navbar/phone.svg" alt="" class="navbar__phone_img">
+								<a href="tel:8(917)972-11-18" class="navbar__phone_text">8 (917) 972-11-18</a>
+								<img src="img/navbar/whatsapp.svg" alt="WhatsApp" class="navbar__phone_whatsApp">
+								<img src="img/navbar/viber.svg" alt="Viber" class="navbar__phone_viber">
 							</div>
 							<!-- /.navbar__phone -->
 							
 						</div>
 						<!-- /.navbar__contacts -->
-						<button class="button navbar__button">Заказать обратный звонок</button>
+						<button class="button navbar__button form-modal-button" id="button">Заказать обратный звонок</button>
 						<!-- /.button navbar__button -->
 					</div>
 					<!-- /.navbar__info -->
@@ -72,8 +76,7 @@
 				<!-- /.hero-block -->
 				
 
-				<button class="button hero-button">ВЫЗВАТЬ МАСТЕРА</button>
-				
+				<a href="#form" class="button hero-button">ВЫЗВАТЬ МАСТЕРА</a>
 			</div>
 				<!-- /.hero -->
 		</div>
@@ -83,10 +86,10 @@
 
 	<main>
 
-		<section class="section form">
+		<section class="section form" id="form">
 			<div class="container">
 				<div class="form-blocks">
-					<h2 class="section-title form-blocks__title">Вызвать мастера.</h2>
+					<h2 class="section-title form-blocks__title">Вызвать мастера</h2>
 					<form action="#" class="form-block">
 						<input type="text" name="username" class="input form-block__input" placeholder="Ваше имя">
 						<input type="tel" name="phone" class="input form-block__input" placeholder="Ваш телефон">
@@ -101,10 +104,10 @@
 
 		<section class="section repair">
 			<div class="container">
-				<h2 class="section-title repair__title">Виды ремонта.</h2>
+				<h2 class="section-title repair__title">Виды ремонта</h2>
 				<!-- /.section-title repair__title -->
 				<div class="repair-cards">
-					<div class="repair-card">
+					<div class="repair-card repair-card__bg1">
 						<h3 class="repair-card__title">Косметический</h3>
 						<div class="repair-card__commodity">
 							<img src="img/repair/Rectangle-1.jpg" alt="" class="repair-card__image">
@@ -112,7 +115,7 @@
 						</div>
 						
 					</div>
-					<div class="repair-card repair-card__border">
+					<div class="repair-card repair-card__border repair-card__bg2">
 						<h3 class="repair-card__title">Под ключ</h3>
 						<div class="repair-card__commodity">
 							<img src="img/repair/Rectangle-2.jpg" alt="" class="repair-card__image">
@@ -120,7 +123,7 @@
 						</div>
 						
 					</div>
-					<div class="repair-card">
+					<div class="repair-card repair-card__bg3">
 						<h3 class="repair-card__title">Капитальный</h3>
 						<div class="repair-card__commodity">
 							<img src="img/repair/Rectangle-3.jpg" alt="" class="repair-card__image">
@@ -128,7 +131,7 @@
 						</div>
 						
 					</div>
-					<div class="repair-card repair-card__border">
+					<div class="repair-card repair-card__border repair-card__bg4">
 						<h3 class="repair-card__title">Евроремонт</h3>
 						<div class="repair-card__commodity">
 							<img src="img/repair/Rectangle-4.jpg" alt="" class="repair-card__image">
@@ -143,9 +146,123 @@
 		</section>
 		<!-- /.section repair -->
 
+		<section class="section service">
+			<h2 class="section-title service__title">Услуги</h2>
+				<!-- /.section-title service__title -->
+			<div class="container">
+				
+				<div class="service-blocks">
+					<ul class="service-list">
+						<li class="service-list__item">
+							<img src="img/service/calc.svg" alt="" class="service-list__image">
+							<span class="service-list__text">Разработка индивидульного дизайн-макета.</span>
+						</li>
+						<li class="service-list__item">
+							<img src="img/service/designer.svg" alt="" class="service-list__image">
+							<span class="service-list__text">Расчет сметы на работу и материалы</span>
+						</li>
+						<li class="service-list__item">
+							<img src="img/service/shipped.svg" alt="" class="service-list__image service-list__image2">
+							<span class="service-list__text">Закупим и доставим стройматериалы.</span>
+						</li>
+					</ul>
+					<!-- /.service-list -->
+					<div class="service-image">
+						<img src="img/service/dom.jpg" class="service-image__img"></img>
+					</div>
+					
+					<!-- /.service-image -->
+					<a href="#form"class="button service-button">ВЫЗВАТЬ МАСТЕРА</a>
+					
+				</div>
+				<!-- /.service -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.section -->
+
 	</main>
 
-	
-	
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-blocks">
+				<span class="footer-blocks__text">Наш большой опыт в сфере ремонта и отделки делает нас одним из наиболее востребованных исполнителей ремонтных работ. Мы несем всю ответственность за качество и предоставляем гарантию на все виды работ, и делаем все, чтобы наши клиенты были довольны результатом.</span>
+				<div class="footer-block">
+					<div class="footer-block__contacts">
+						<h2 class="section-title footer-block__title">Контакты</h2>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<img src="img/footer/addres.svg" alt="" class="footer-list__image">
+								<span class="footer-list__text">г.Тольятти, Самарская область</span>
+							</li>
+							<li class="footer-list__item">
+								<img src="img/navbar/mail.svg" alt="" class="footer-list__image">
+								<a href="mailto:foodremstroy@yandex.ru" class="footer-list__mail footer-list__text">foodremstroy@yandex.ru</a>
+							</li>
+							<li class="footer-list__item">
+								<img src="img/navbar/phone.svg" alt="" class="footer-list__image">
+								<a href="tel:8(917)972-11-18" class="footer-list__phone footer-list__text">8 (917) 972-11-18</a>
+								<img src="img/navbar/whatsapp.svg" alt="WhatsApp" class="footer-list__whatsapp footer-list__messenger">
+								<img src="img/navbar/viber.svg" alt="Viber" class="footer-list__viber footer-list__messenger">
+							</li>
+						</ul>
+						<form action="#" class="footer-form">
+							<span class="footer-form__title">Мы перезвоним вам!</span>
+							<input type="text" name="username" class="input footer-form__input" placeholder="Ваше имя">
+							<input type="tel" name="phone" class="input footer-form__input" placeholder="Ваш телефон">
+							<button class="button footer-form__button">ОТПРАВИТЬ</button>
+						</form>
+							<!-- /.footer-form -->
+						
+					</div>
+					<!-- /.footer-block__contacts -->
+					<img src="img/footer/builders.png" alt="" class="footer-block__image">
+				</div>
+				<!-- /.footer-contacts -->
+			</div>
+			<!-- /.footer-block -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
+
+	<div class="modal" id="modal">
+		<div class="modal-dialog">
+			<div class="modal-title">Мы перезвоним вам!</div>
+			<button class="modal-dialog__close" id="close">&times;</button>
+			<div class="modal-form">
+				<form action="#" id="modal-form" class="offer-form form">
+					<div class="offer-form__field ">
+						<input type="text" name="username" class="input offer-form__input modal-input" placeholder="Ваше имя *">
+					</div>
+					<div class="offer-form__field ">
+						<input type="tel" name="phone" class="input offer-form__input modal-input phone" placeholder="Ваш телефон *">
+					</div>
+					<div class="offer-form__field ">
+						<input type="email" name="email" class="input offer-form__input modal-input" placeholder="Ваша почта">
+					</div>
+					<div class="offer-form__field ">
+						<textarea name="message" id="" cols="30" rows="10" class="offer-form__textarea offer-form__input offer-form__input__text modal-textarea" placeholder="Сообщение"></textarea>	
+					</div>
+					<span class="offer-form__subtitle">
+						Поля отмеченные<span class="offer__required">*</span> обязательны для заполнения!
+					</span>
+					<button class="offer-button button modal-button">Отправить</button>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
